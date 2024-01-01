@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/icono-kaffi.png">
+    <link rel="stylesheet" href="../styles/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Mi Perfil - Kaffi</title>
+</head>
+
+<body>
+    <header>
+        <!-- barra de navegacion -->
+        <!-- diseño obtenido de https://getbootstrap.com/docs/5.3/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg justify-content-between">
+
+            <!-- Botón de hamburguesa visible en pantallas pequeñas -->
+            <div class="py-2 ms-1 d-flex header-menu-icon">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                </button>
+            </div>
+
+            <!-- Contenedor del logo centrado, visible en pantallas pequeñas -->
+            <div class="d-lg-none d-flex align-items-center ms-auto ps-5">
+                <a href="../../index.html" class="header-logo-link">
+                    <img class="img-fluid" src="../images/imagen_nombre_kaffi.png" alt="imagen_de_nombre_kaffi"
+                        id="navegation-bar-logo" />
+                </a>
+            </div>
+
+            <!-- Contenedor del logo a la izquierda, visible en pantallas grandes -->
+            <div class="d-none d-lg-block mx-0 px-3">
+                <a href="../../index.html" class="header-logo-link py-3">
+                    <img class="img-fluid" src="../images/imagen_nombre_kaffi.png" alt="imagen_de_nombre_kaffi"
+                        id="navegation-bar-logo" />
+                </a>
+            </div>
+
+            <!-- Iconos de carrito y usuario a la derecha, siempre en la esquina superior derecha -->
+            <div id="iconos-carrito-y-usuario" class="ms-auto order-lg-last">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item p-0 d-flex align-items-center">
+                        <a id="enlace-carrito-header" class="nav-link active text-white px-2"
+                            href="../pages/shopping-cart.html">
+                            <i class="fa-solid fa-cart-shopping py-2 px-1 header-icons-link"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item p-0 d-flex align-items-center">
+                        <a id="enlace-login-header" class="nav-link active text-white px-2"
+                            href="../pages/login.html#login-container">
+                            <i class="fa-solid fa-user p-2 header-icons-link"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menú desplegable, visible en pantallas pequeñas -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="../pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/about_us.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="introduction-container" class="row d-flex align-items-center justify-content-center p-2">
+            <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center">
+                <img class="img-fluid py-2" src="../images/imagenusuario.png" alt="logo_kaffi_2" id="img-logo-blanco" />
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center">
+                <h3 class="description text-center text-white">"Hola, NombreUsuario."</h3>
+            </div>
+        </section>
+    </header>
+
+    <!-- seccion principal -->
+    <main>
+        <section class="d-flex flex-column mx-auto my-3" id="profile-section-container">
+            <div class="row">
+                <!-- Menu lateral Opciones (pantallas grandes) -->
+                <div id="options-lateral-menu"
+                    class="col-md-4 d-md-flex flex-column justify-content-start align-items-center">
+                    <!-- Contenedor Imagen -->
+                    <div class="row d-flex align-items-center justify-content-center my-2">
+                        <div id="option-logo" class="container-forms col d-flex justify-content-center">
+                            <img src="../images/logo kaffi colores.png" class="img-fluid w-50 my-2">
+                        </div>
+                    </div>
+                    <!-- Seccion Cuenta Menu Lateral-->
+                    <div class="option-button row d-flex align-items-center justify-content-center my-2 w-100">
+                        <!-- columna para boton  -->
+                        <div class="col-2 d-flex justify-content-center ms-3">
+                            <i class="fa-solid fa-user-pen fa-xl"></i>
+                        </div>
+                        <div id="option-account-container" class="mx-0 col d-flex justify-content-start m-2">
+                            <button id="option-account-button-lg">Cuenta</button>
+                        </div>
+                    </div>
+                    <!-- Seccion Inf. Pago Menu Lateral-->
+                    <div class="option-button row d-flex align-items-center justify-content-center my-2 w-100">
+                        <!-- columna para boton  -->
+                        <div class="col-2 d-flex justify-content-center ms-3">
+                            <i class="fa-solid fa-credit-card fa-xl"></i>
+                        </div>
+                        <div id="option-paymethod-container" class="mx-0 col d-flex justify-content-start m-2 ">
+                            <button id="option-paymethod-button-lg">Info. Pago</button>
+                        </div>
+                    </div>
+                    <!-- Seccion Direccion Menu Lateral-->
+                    <div class="option-button row d-flex align-items-center justify-content-center my-2 w-100">
+                        <!-- columna para boton  -->
+                        <div class="col-2 d-flex justify-content-center ms-3">
+                            <i class="fa-solid fa-house-user fa-xl"></i>
+                        </div>
+                        <div id="option-address-container" class="mx-0 col d-flex justify-content-start m-2">
+                            <button id="option-address-button-lg">Dirección</button>
+                        </div>
+                    </div>
+                    <!-- Seccion Pedidos Menu Lateral-->
+                    <div class="option-button row d-flex align-items-center justify-content-center my-2 w-100">
+                        <!-- columna para boton  -->
+                        <div class="col-2 d-flex justify-content-center ms-3">
+                            <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                        </div>
+                        <div id="option-orders-container" class="mx-0 col d-flex justify-content-start m-2">
+                            <button id="option-orders-button-lg">Pedidos</button>
+                        </div>
+                    </div>
+                    <!-- Seccion Comentarios Menu Lateral-->
+                    <div class="option-button row d-flex align-items-center justify-content-center my-2 w-100">
+                        <!-- columna para boton  -->
+                        <div class="col-2 d-flex justify-content-center ms-3">
+                            <i class="fa-solid fa-comments fa-xl"></i>
+                        </div>
+                        <div id="option-comments-container" class="mx-0 col d-flex justify-content-start m-2">
+                            <button id="option-comments-button-lg">Comentarios</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna Contenedores (pantallas grandes) y opcs+cont(pantallas pequeñas) -->
+                <div class="col-md-8">
+                    <!-- Contenedor Imagen -->
+                    <div class="row d-flex align-items-center justify-content-center my-2 d-md-none">
+                        <div id="option-logo" class="container-forms col-md-10 d-flex justify-content-center">
+                            <img src="../images/logo kaffi colores.png" class="img-fluid w-25 my-2">
+                        </div>
+                    </div>
+                    <!-- Seccion Cuenta -->
+                    <div class="option-button row d-flex align-items-center justify-content-center d-md-none my-2">
+                        <!-- columna para boton  -->
+                        <div class="col-4 d-flex justify-content-center">
+                            <i class="fa-solid fa-user-pen fa-xl"></i>
+                        </div>
+                        <div id="option-account-container" class="col-4 d-flex justify-content-center">
+                            <button id="option-account-button">Productos</button>
+                        </div>
+                        <div class="col-4  d-flex justify-content-center">
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+                        </div>
+                    </div>
+                    <div id="container-account" class="row align-items-center justify-content-center">
+                        <!-- columna para contenedor  -->
+                        <div class="container-forms col-md-10 d-flex justify-content-center m-2">
+                            Contenedor Cuenta
+                        </div>
+                    </div>
+                    <!-- Seccion Informacion Pago -->
+                    <div class="option-button row d-flex align-items-center justify-content-center d-md-none my-2">
+                        <!-- columna para boton  -->
+                        <div class="col-4 d-flex justify-content-center">
+                            <i class="fa-solid fa-credit-card fa-xl"></i>
+                        </div>
+                        <div id="option-paymethod-container" class="col-4 d-flex justify-content-center">
+                            <button id="option-paymethod-button">Inf. Pagos</button>
+                        </div>
+                        <div class="col-4  d-flex justify-content-center">
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+                        </div>
+                    </div>
+                    <div id="container-paymethod" class="row align-items-center justify-content-center">
+                        <!-- columna para contenedor  -->
+                        <div class="container-forms col-md-10 d-flex justify-content-center m-2">
+                            Contenedor Informacion Pago
+                        </div>
+                    </div>
+                    <!-- Seccion Dirección -->
+                    <div class="option-button row d-flex align-items-center justify-content-center d-md-none my-2">
+                        <!-- columna para boton  -->
+                        <div class="col-4 d-flex justify-content-center">
+                            <i class="fa-solid fa-house-user fa-xl"></i>
+                        </div>
+                        <div id="option-address-container" class="col-4 d-flex justify-content-start">
+                            <button id="option-address-button">Dirección</button>
+                        </div>
+                        <div class="col-4  d-flex justify-content-center">
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+                        </div>
+                    </div>
+                    <div id="container-address" class="row align-items-center justify-content-center">
+                        <!-- columna para contenedor  -->
+                        <div class="container-forms col-md-10 d-flex justify-content-center m-2">
+                            Contenedor Dirección
+                        </div>
+                    </div>
+                    <!-- Seccion Pedidos -->
+                    <div class="option-button row d-flex align-items-center justify-content-center d-md-none my-2">
+                        <!-- columna para boton  -->
+                        <div class="col-4 d-flex justify-content-center">
+                            <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                        </div>
+                        <div id="option-orders-container" class="col-4 d-flex justify-content-start">
+                            <button id="option-orders-button">Pedidos</button>
+                        </div>
+                        <div class="col-4  d-flex justify-content-center">
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+                        </div>
+                    </div>
+                    <div id="container-orders" class="row align-items-center justify-content-center">
+                        <!-- columna para contenedor  -->
+                        <div class="container-forms col-md-10 d-flex justify-content-center m-2">
+                            Contenedor Pedidos
+                        </div>
+                    </div>
+                    <!-- Seccion Comentarios -->
+                    <div class="option-button row d-flex align-items-center justify-content-center d-md-none my-2">
+                        <!-- columna para boton  -->
+                        <div class="col-4 d-flex justify-content-center">
+                            <i class="fa-solid fa-comments fa-xl"></i>
+                        </div>
+                        <div id="option-comments-container" class="col-4 d-flex justify-content-start">
+                            <button id="option-comments-button">Comentarios</button>
+                        </div>
+                        <div class="col-4  d-flex justify-content-center">
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+                        </div>
+                    </div>
+                    <div id="container-comments" class="row align-items-center justify-content-center">
+                        <!-- columna para contenedor  -->
+                        <div class="container-forms col-md-10 d-flex justify-content-center m-2">
+                            Contenedor Comentarios
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="text-light">
+
+        <!-- Section: Social media -->
+        <section id="social-media" class="text-center p-3 border-bottom border-3">
+
+            <div class="mb-2">
+                <span>Siguenos en nuestras redes sociales</span>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/kaffimerida/" target="_blank" class="me-5">
+                    <img class="social-icon" src="../images/icons8-instagram-60.png" alt="El icono de Instagram"></a>
+                <a href="https://www.facebook.com/kaffiMid/?locale=es_LA" target="_blank" class="me-5">
+                    <img class="social-icon" src="../images/icons8-facebook-50 (2).png" alt="El icono de Facebook"></a>
+                <a href="https://api.whatsapp.com/message/RMOZKTGCQLG3H1?autoload=1&app_absent=0" target="_blank">
+                    <img class="social-icon" src="../images/icons8-whatsapp-50 (1).png" alt="El icono de whatssap"></a>
+            </div>
+        </section>
+
+        <!-- Section: Logo y sucursales  -->
+        <section id="sucursales" class="text-center p-3 border-bottom border-3">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+
+                    <!-- Logo -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="../images/logo kaffi blanco.png" alt="logo de Kaffi" class="img-fluid w-50">
+                    </div>
+
+                    <!-- Fransisco Montejo -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h5 class="mb-4 ">
+                            Sucursal Francisco de Montejo
+                        </h5>
+                        <p class="text-light">
+                            C.41-A #441-x 58,
+                            Fransisco de Montejo,
+                            97203
+                            Mérida Ycatan
+                        </p>
+                    </div>
+
+                    <!-- Caucel -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h5 class="mb-4">
+                            Sucursal Caucel
+                        </h5>
+                        <p class="text-light">
+                            C.70 #673-x 39 A y 43,
+                            Plaza Premium Caucel local #6,
+                            Caucel, 97203,
+                            Mérida Ycatan
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-light text-center p-4">
+            <p class="text-light"> Politica de Privacidad | Términos y Condicones de Uso | Aviso Legal</p><br>
+            <p class="text-light">Copyright © [2018] [Kaffi S.A de C.V]</p>
+            <span>Todos los derechos reservados</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f430a0c40.js" crossorigin="anonymous"></script>
+    <script type="module" src="../js/profile.js"></script>
+</body>
+
+
+</html>
